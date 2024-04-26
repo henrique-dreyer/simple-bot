@@ -38,7 +38,7 @@ for coluna in sheet_produtos.iter_rows(min_row=4):
 
     pyautogui.hotkey('enter')
     time.sleep(3.0)
-    confirmacao = pyautogui.confirm('Gata, quer seguir para o proximo produto? :)', buttons=['Sim', 'Nao'])
+    confirmacao = pyautogui.confirm('Seguir para o proximo produto?', buttons=['Sim', 'Nao'])
     if confirmacao == 'Sim':
         pass
     else:
